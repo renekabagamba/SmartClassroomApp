@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_monitor_pane"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -13,4 +14,88 @@
     tools:context="com.cmu.iot.smartclassroomapp.views.MonitorPaneActivity"
     tools:showIn="@layout/activity_monitor_pane">
 
-</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room:"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/room_spinner">
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Room temperature" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginRight="40dp"
+            android:background="@color/light_gray"
+            android:id="@+id/text_view_room_temp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="degree celsius"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Noisy" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/light_gray"
+        android:id="@+id/text_view_noisy" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Number of occupants" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/light_gray"
+        android:id="@+id/text_view_no_occupants" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Refresh"
+        android:id="@+id/refresh_button"/>
+
+
+
+
+
+</LinearLayout>

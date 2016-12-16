@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">SmartClassroomApp</string>
+    <string name="app_name">Smart Classroom App</string>
     <string name="title_activity_monitor_pane">MonitorPaneActivity</string>
 
     <!-- Related to the login -->
     <string name="login_error_msg">Login Error</string>
+    <string name="invalid_credentials">Invalid credentials</string>
     <string name="no_connection_msg">No internet connection</string>
     <string name="missing_information_msg">Please fill all information</string>
 
@@ -11,5 +12,10 @@
     <!-- Related to the Menu -->
     <string name="action_preferences">Preferences</string>
     <string name="action_logout">Log out</string>
+
+
+    <string-array name="available_rooms">
+        <item>Lab</item>
+    </string-array>
 
 </resources>

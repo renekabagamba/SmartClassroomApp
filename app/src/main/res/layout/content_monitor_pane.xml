@@ -19,10 +19,12 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Room:"/>
+            android:text="Room:"
+            android:textAppearance="@android:style/TextAppearance" />
 
         <Spinner
             android:layout_width="wrap_content"
@@ -37,7 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Room temperature" />
+        android:text="Room temperature"
+        android:textAppearance="@android:style/TextAppearance" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="degree celsius"
-            android:textSize="20sp"/>
+            android:textAppearance="@android:style/TextAppearance" />
 
     </LinearLayout>
 
@@ -66,11 +69,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Noisy" />
+        android:text="Noisy"
+        android:textAppearance="@android:style/TextAppearance" />
 
     <TextView
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
         android:background="@color/light_gray"
         android:id="@+id/text_view_noisy" />
 
@@ -79,7 +85,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Number of occupants" />
+        android:text="Number of occupants"
+        android:textAppearance="@android:style/TextAppearance" />
 
     <TextView
         android:layout_width="150dp"
@@ -91,8 +98,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Refresh"
-        android:id="@+id/refresh_button"/>
+        android:text="REFRESH"
+        android:id="@+id/refresh_button"
+        android:textAppearance="@android:style/TextAppearance" />
 
 
 

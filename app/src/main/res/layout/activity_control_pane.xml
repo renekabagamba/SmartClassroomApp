@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Air Conditioning"
-        android:textSize="25sp"/>
+        android:textAppearance="@android:style/TextAppearance" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,13 +26,15 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="On"
-            android:id="@+id/ac_on_button"/>
+            android:id="@+id/ac_on_button"
+            android:textAppearance="@android:style/TextAppearance" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Off"
-            android:id="@+id/ac_off_button"/>
+            android:id="@+id/ac_off_button"
+            android:textAppearance="@android:style/TextAppearance" />
 
     </LinearLayout>
 
@@ -40,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lights"
-        android:textSize="25sp"/>
+        android:textAppearance="@android:style/TextAppearance" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,23 +53,42 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="On"
-            android:id="@+id/lights_on_button"/>
+            android:id="@+id/lights_on_button"
+            android:textAppearance="@android:style/TextAppearance" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Off"
-            android:id="@+id/lights_off_button"/>
+            android:id="@+id/lights_off_button"
+            android:textAppearance="@android:style/TextAppearance" />
 
     </LinearLayout>
 
-    <SeekBar
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:max="3"
-        android:id="@+id/seekBar" />
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intensity:"
+            android:textAppearance="@android:style/TextAppearance" />
+
+        <SeekBar
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:max="2"
+            android:id="@+id/seekBar"
+            android:visibility="gone"/>
+
+    </LinearLayout>
 
 
 </LinearLayout>
